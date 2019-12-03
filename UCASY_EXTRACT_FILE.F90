@@ -6,10 +6,10 @@ PROGRAM UCASY
   CHARACTER(LEN=55) :: FLNM,FLNM1
   CHARACTER(LEN=10) :: CITY(NCITY) = &
           (/'baicheng ','baishan  ', &
- 	        'changchun','jilin    ', &
- 	        'liaoyuan ','siping   ', &
- 	        'songyuan ','tonghua  ', &
- 	        'yanbian  '/)
+ 	          'changchun','jilin    ', &
+ 	          'liaoyuan ','siping   ', &
+ 	          'songyuan ','tonghua  ', &
+ 	          'yanbian  '/)
   DO I=1,NCITY
    FLNM='air_'//TRIM(CITY(I))//'_2019.csv'
    FLNM1='output_'//TRIM(CITY(I))//'_2019.csv'
