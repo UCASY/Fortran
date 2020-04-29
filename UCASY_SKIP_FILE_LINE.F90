@@ -1,0 +1,10 @@
+PROGRAM UCASY
+  IMPLICIT NONE
+  INTEGER :: NUMBER
+  OPEN(10,FILE="UCASY.txt")
+  READ(10,"(5/)") !Skip the first six lines in files
+  READ(10,*) NUMBER
+  WRITE(*,*) NUMBER
+  STOP
+END PROGRAM UCASY
+  
